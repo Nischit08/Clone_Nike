@@ -1,0 +1,776 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+@font-face{
+    font-family: nikefont;
+  src:url(HelveticaNowDisplay-ExtraBold.otf)
+}
+@font-face{
+    font-family: nike1;
+    src:url(futura-nd-for-nike-365-cn-xbd.ttf) ;
+}
+@font-face{
+    font-family:cent;
+src: url(HelveticaNowText-Medium.otf)
+}
+@font-face{
+    font-family:hairline;
+src:url(HelveticaNowDisplay-Hairline.otf)
+}
+@font-face{
+    font-family:midas;
+src:url(HelveticaNowText-Light.otf)
+}
+html,body{
+    background-color: #f5f5f5;
+
+}
+#nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    height: 5vh;
+    overflow-y: hidden;
+    z-index: 20;
+
+}
+#nav #links{
+display: flex;
+align-items: center;
+text-align: center;
+
+
+}
+#nav #links h4{
+    font-family: cent;
+        margin: 10px;
+    font-weight:550;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size:17px;
+    
+}
+#nav #components{
+    display: flex;
+}
+#nav #components h4{
+margin: 10px;
+}
+#commercial{
+    position: relative;
+    font-family:Helvetica, sans-serif;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.2vw;
+display: flex;
+justify-content:center;
+
+}
+#new #nf{
+    position:absolute;
+    background-color: rgba(36, 33, 33, 0.384);
+    transform: translateX(2%);
+    height:50%;
+    width: 100vw;
+    z-index: 10;
+    top:5%;
+    right: 2%;
+    color: white;
+    display: flex;
+   justify-content: center;
+    opacity: 0;
+    
+    
+}
+#new #nf #nf-in h3{
+    margin-top: 0.5vh;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5vh;
+    font-weight: 300;
+}
+#new #nf #nf-in{
+    padding: 2vw;
+}
+#new #nf #nf-in h5{
+    color: rgba(0, 0, 0, 0.715);
+    margin-bottom: 1.5vh;
+    display: flex;
+    align-items: flex-start;
+}
+ #new #links:hover #nf{
+
+    background-color: aqua;
+}
+#men-sec{
+    position:absolute;
+    background-color: rgba(36, 33, 33, 0.384);
+    transform: translateX(2%);
+    height:50%;
+    width: 100vw;
+    z-index: 10;
+    top:5%;
+    right: 2%;
+    color: white;
+    display:flex;
+   justify-content:center;
+   opacity: 0;
+   
+}
+#men-sec #ms-in{
+    padding: 1.5vw;
+}
+#men-sec #ms-in h3{
+font-weight: 300;
+ margin-top: 0.5vh;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5vh;
+}
+#ms-in h5{
+    color: rgba(0, 0, 0, 0.715);
+    margin-bottom: 1.5vh;
+    display: flex;
+    align-items: flex-start;
+}
+
+#nav2{
+    position:absolute;
+    background-color: rgba(36, 33, 33, 0.384);
+    transform: translateX(2%);
+    height:50%;
+    width: 100vw;
+    z-index: 10;
+    top:5%;
+    right: 2%;
+    color: white;
+    display:flex;
+   justify-content:center;
+   opacity: 0;
+}
+
+#nav2 h3{
+    font-weight: 300;
+    margin-top: 0.1vh;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5vh;
+}
+#nav2 h5{
+    color: rgba(0, 0, 0, 0.715);
+    margin-bottom: 1.5vh;
+    display: flex;
+    align-items: flex-start;
+    z-index:20;
+}
+#nav2 h5 span{
+
+}
+#nav2 #wm-in{
+    padding: 1vw;
+} 
+#kc{
+
+    position:absolute;
+    background-color: rgba(36, 33, 33, 0.384);
+    transform: translateX(2%);
+    height:50%;
+    width: 100vw;
+    z-index: 10;
+    top:5%;
+    right: 2%;
+    color: white;
+    display:flex;
+   justify-content:center;
+   opacity: 0;
+ }
+ #k-in h3{
+    font-weight: 300;
+    margin-top: 1.2vh;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5vh;
+ }
+ #k-in{
+    padding:0vw 1.2vw;
+ }
+ #k-in h5{
+    color: rgba(0, 0, 0, 0.715);
+    margin-bottom: 1.5vh;
+    display: flex;
+    align-items: flex-start;
+ }
+#links h4 a{
+    text-decoration: none;
+    color: black;
+}
+#poo{
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    background-color: white;
+}
+#poo-cont{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "cent";
+    font-weight: 100;
+    height: 100vh;
+    
+}
+#poo-in{
+    padding: 3.5vw;
+}
+
+#poo-in h3{
+    margin-top: .5vh;
+    margin-bottom: 4vh;
+}
+#poo-in h5{
+
+    margin-bottom: 2vh;
+    font-size: .85vw;
+    color: rgba(0, 0, 0, 0.715);
+}
+
+#foot{
+    border-top: solid .5px rgba(0, 0, 0, 0.348);
+    position: absolute;
+    top: 24%;
+    background-color: white;
+    width: 100%;
+    overflow: hidden; 
+
+}
+#foot-cont {
+    display: flex;
+    padding-top:3vw;
+    height: 49vh;
+}
+#foot-cont #foot-in{
+    margin-right: 12vw;
+    padding-left: 7vw;
+
+}
+#foot-in h3{
+    margin-bottom:3vh;
+font-family: "cent";
+} 
+#foot-in h5{
+    margin-bottom: 1.2vh;
+    font-size: .8vw;
+    font-family: "cent";
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.715);
+}
+#footer{
+    display: flex;
+}
+#footer h5{
+    margin-top:-3vw;
+    padding:3vw;
+    letter-spacing: .1vw;
+    font-family: "cent";
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.750);
+}
+
+
+
+
+#commercial #offer{
+    transform: translateX(-10%);
+}
+#commercial #offer h3{
+    font-family:  Helvetica, sans-serif ,Arial;
+    font-weight: 400;
+
+}
+#commercial #offer h4{
+    font-family:  Helvetica, sans-serif ,Arial;
+    font-weight: 400;
+
+}
+#commercial #offer a{
+    font-family:  Helvetica, sans-serif ,Arial;
+    font-weight: 400;
+
+}
+#commercial #offer1{
+    transform: translateX(10%);
+}
+#commercial #offer1 h3{
+    font-family:  Helvetica, sans-serif ,Arial;
+    font-weight: 400;
+
+}
+#commercial #offer1 h4{
+    font-family:  Helvetica, sans-serif ,Arial;
+    font-weight: 400;
+
+}
+#commercial #offer1 a{
+    font-family:  Helvetica, sans-serif ,Arial;
+    font-weight: 400;
+
+}
+#offer1{
+
+}
+@keyframes move {
+    from{
+transform: translateX(100%);
+    }
+    to{
+transform: translateX(-100%);
+    }
+}
+#vs{
+    background-color: white;
+height: 100vh;
+width: 100%;
+overflow-y: hidden;
+}
+#vs video{
+    transform: translateY(-18%);
+    scale: 0.96;
+    position:relative;
+ height: 100%;
+ width: 100%;
+
+    
+}
+#vs #text{
+    background-color: white;
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    font-family:Helvetica, sans-serif,Arial;
+    padding: 10px;
+    /* line-height: 2.5vw; */
+}
+#vs #text h4{
+    font-family: helvetica;
+    font-size:16px;
+    font-weight: 600;
+}
+#vs #text h2{
+    
+    font-size: 60px;
+    font-weight: bolder;
+    font-family:nike1;
+font-weight:bolder;
+text-transform: uppercase;
+letter-spacing: -2px;
+
+}
+#vs #text h5{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#vs #text #ps #sp{
+    color: #f5f5f5;
+    background-color: black;
+    font-size: 15px;
+    width: 140px;
+    height: 40px;
+    border-radius: 40px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#sbs{
+    display: flex;
+    justify-content: center;
+    font-family: cent;
+    font-size: 46px;
+    font-weight: 100;
+    padding: 10px;
+}
+#elcontainer{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#overlay{
+    width: 100%;
+    height: 100px;
+    background-color: #939393;
+    position: absolute;
+    top:-100%;
+
+}
+#elem{
+    font-family: cent;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid black;
+    overflow: hidden;
+    background-color: white;
+}
+#elem h2{
+    padding: 0 2vw;
+    font-weight: 400;
+    font-size: 50px;
+    z-index: 10;
+}
+#elem:hover #overlay{
+    top: 0;
+    transition: all ease 0.5s;
+}
+#fixed-img{
+    height: 550px;
+    width: 400px;
+    position: fixed;
+    top: 30%;
+    left: 65%;
+    border-radius: 20px;
+    display: none;
+    background-position: center;
+    background-size: cover;
+
+}
+#elem h2 a{
+    text-decoration:none;
+    color: black;
+
+}
+#featured{
+    margin-top: 110px;
+    height: 100vh;
+}
+#featured h2{
+    font-family:cent;
+    font-weight: 100;
+    padding-bottom: 20px;
+    padding-left: 1.3vw;
+    transform: translateY(-5%);
+    letter-spacing: -1px;
+font-size: 40px;
+
+}
+#featured #img-sec img{
+width: 530px;
+height: 700px;
+
+}
+#img-sec{
+    display: flex;
+
+    justify-content: space-evenly;
+}
+#Nike-jam{
+    position: relative;
+
+}
+#ove{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.991);
+    top: 0;
+    width: 530px;
+    height:700px;
+    opacity: 0;
+
+}
+#Nike-jam:hover #ove{
+    opacity:1;
+    transition: all ease 0.5s;
+}
+#Club-third-kits{
+    position: relative;
+}
+#Club-third-kits:hover #ove{
+    opacity:1;
+    transition: all ease 0.5s;
+}
+#Easyon{
+    position: relative;
+}
+#Easyon:hover #ove{
+    opacity:1;
+    transition: all ease 0.5s;
+}
+#Nike-jam h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    font-family: cent;
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+    font-style: italic;
+
+}
+#Nike-jam:hover h4{
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+#Club-third-kits h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    font-family: cent;
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+    font-style: italic;
+    text-wrap:nowrap;
+
+}
+#Club-third-kits:hover h4{
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+#Easyon h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    font-family: cent;
+    font-size: 50px;
+    color: white;
+    font-weight: 100;
+    font-style: italic;
+
+}
+#Easyon:hover h4{
+    opacity: 1;
+    transition: all ease 0.5s;
+}
+#shopping-cont{
+    margin-top: 90px;
+    font-family:cent;
+    font-weight: 100;
+    padding-left: 1.3vw;
+    transform: translateY(-10%);
+    letter-spacing: -1px;
+font-size: 20px;
+overflow-x: scroll;
+scroll-behavior: smooth;
+
+
+
+
+}
+#shopping-cont #shoe-container #txt h4{
+    font-weight:500 ;
+    font-family: cent;
+    font-size:20px;
+    line-height: 24px;
+}
+#shopping-cont #shoe-container #txt h4:nth-last-child(2){
+    font-weight:bolder ;
+    font-family:cent;
+color: RGB(112, 112, 114);
+    font-size:16px;
+}
+#moress #shoe-container{
+    display:flex;
+    margin: 20px;
+    justify-content: space-evenly;
+
+}
+#moress{
+    display: inline-flex;
+    overflow-x: visible;
+    justify-content: center;
+    align-items: center;
+
+}
+#moress #shoe-container{
+    display: inline-block;
+    transform: translate(-10%);
+    margin-left: -25px;
+    scale: 0.7;
+    justify-content: space-evenly;
+}
+#shoe img{
+    background-position:center;
+    background-size: cover;
+   
+}
+#moress::-webkit-scrollbar{
+    width: 50px;
+    background-color: aqua;
+}
+#shoe-container h4{
+    padding: 15px;
+}
+#falls{
+    display: inline;
+    margin: 30px;
+    padding-left: 10vw;
+    justify-content: center;
+    
+}
+#falls h5{
+    font-family:Helvetica;
+    font-weight: 500;
+    font-size: 1.5vw;
+margin-left: 3.1vw;
+
+
+}
+#falls img{
+    width:95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 3vw;
+  
+}
+#falls #j-apparel h3{
+    font-family:cent;
+    font-weight: 100;
+    font-size: medium;
+
+}
+#falls #j-apparel h3:nth-last-child(1){
+    font-family:cent;
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+
+}
+#falls #j-apparel{
+    text-align: center;
+}
+#falls #j-apparel h1{
+    font-family:nike1;
+    font-weight: bolder;
+font-size: 70px;
+text-transform: uppercase;
+letter-spacing: -2px;
+
+}
+#j-apparel #button{
+    padding-top: 50px;
+}
+#j-apparel #button #btn{
+
+    width: 90px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+
+
+}
+#mb{
+width: auto;
+height: vh;
+margin-top: 6vh;
+}
+#imc{
+    display:inline-flex;
+    padding: .2vw;
+    margin-bottom: -10vh;
+  }
+
+#mb-in{
+    margin:0vw .5vw;
+    position: relative;
+}
+#tex{
+    position: absolute;
+    color: white;
+    top: 80%;
+    margin-left: 3vw;
+    font-family: "cent";
+}
+#tex h3{
+    font-weight: 50;
+    font-size: 1.4vw;
+    margin-bottom: 1.2vh;
+
+}
+#tex h4{
+    font-weight: 50;
+    font-size:1vw ;
+    margin-bottom: 1.2vh;
+    
+}
+#tex button{
+    width: 6vw;
+    height: 3vh;
+    background-color:white ;
+    font-family: "cent";
+    border-radius: 2vw;
+    font-weight: 800;
+    border: white;
+}
+#imc-sc{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#imc-sc::-webkit-scrollbar{
+    overflow-x: hidden;
+}
+
+
+#mb-in:nth-last-child(6) img{
+    width:31.17vw;
+    
+
+}
+
+#mb-in:nth-last-child(5) img{
+    width:31.17vw;
+    
+
+}
+#mb-in:nth-last-child(4) img{
+    width:31.17vw;
+    
+
+}
+#mb-in:nth-last-child(3) img{
+    width:31.17vw;
+    
+
+}
+#mb-in:nth-last-child(2) img{
+    width:31.17vw;
+    
+
+}
+#mb-in:nth-last-child(1) img{
+    width:31.17vw;
+    
+
+}
+#mb #mbt {
+    margin-left:.4vw;
+    
+}
+#mb #mbt h3{
+    font-family: "cent";
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+    margin-left:.5vw;
+    font-weight: 100;
+}
+#mb::-webkit-scrollbar{
+    overflow-x: hidden;
+}
